@@ -2,31 +2,27 @@ document.getElementById("Dr-Phil").addEventListener("click", (e) => {
 
 
     const input = [["salt", "dirt", "calcite", "uranium", "rubber"],
-    ["uranium", "dirt"]]
+    ["uranium", "dirt"]];
     // Output: ["salt", "calcite", "rubber"]
 
     let nl = [];
     for (let i = 0; i < input.length; i++) {
         // console.log(i);
-        
+
         for (let index = 0; index < input[i].length; index++) {
-            if ( input[i][index] === "salt"){
-                nl.push(input[i][index])
+            if (input[i][index] === "salt") {
+                nl.push(input[i][index]);
 
             }
-            else if ( input[i][index] === "calcite"){
+            else if (input[i][index] === "calcite") {
                 nl.push(input[i][index]);
             }
-            else if ( input[i][index] === "rubber"){
+            else if (input[i][index] === "rubber") {
                 nl.push(input[i][index]);
             }
-        
-
             // input[i] is the outer lists.    [index] is the elements inside
-    
-        
         }
-        
+
     }
     console.log(nl);
     document.getElementById("result").textContent = nl.join(', ');
